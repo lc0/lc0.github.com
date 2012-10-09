@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>thoughts in plain text</title>
+  <title>Initial tests for octopress - thoughts in plain text</title>
   <meta name="author" content="Sergii Khomenko">
 
   
   <meta name="description" content="Initial post on octopress, just to test, that everything works correctly.
-Also to check a post view and other sharing options. ">
+Also to check a post view and other sharing options. And additional &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ Also to check a post view and other sharing options. ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lc0.github.com/">
+  <link rel="canonical" href="http://lc0.github.com/blog/2012/10/09/welcome-post/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -63,15 +63,12 @@ Also to check a post view and other sharing options. ">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/10/09/welcome-post/">Initial Tests for Octopress</a></h1>
+      <h1 class="entry-title">Initial Tests for Octopress</h1>
     
     
       <p class="meta">
@@ -94,26 +91,78 @@ Also to check a post view and other sharing options. ">
   </header>
 
 
-  <div class="entry-content"><p>Initial post on <a href="http://octopress.org/">octopress</a>, just to test, that everything works correctly.
+<div class="entry-content"><p>Initial post on <a href="http://octopress.org/">octopress</a>, just to test, that everything works correctly.
 Also to check a post view and other sharing options.</p>
 
+<!--more-->
+
+
+<p>And additional information inside the post, for instance a youtube video</p>
+
+<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/gn9-80ObGA8 "></iframe></div>
+
 </div>
+
+
+  <footer>
+    <p class="meta">
+      
   
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/10/09/welcome-post/">Read on &rarr;</a>
-    </footer>
+
+<span class="byline author vcard">Posted by <span class="fn">Sergii Khomenko</span></span>
+
+      
+
+
+
+
+
+
+
+
   
 
 
-    </article>
+<time datetime="2012-10-09T02:08:00+03:00" pubdate data-updated="true">Oct 9<span>th</span>, 2012</time>
+      
+
+<span class="categories">
   
-  <div class="pagination">
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/test/'>test</a>
+  
+</span>
+
+
+    </p>
     
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://lc0.github.com/blog/2012/10/09/welcome-post/" data-via="lc0d3r" data-counturl="http://lc0.github.com/blog/2012/10/09/welcome-post/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
 </div>
+
+    
+    <p class="meta">
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -130,7 +179,7 @@ Also to check a post view and other sharing options.</p>
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -147,7 +196,7 @@ Also to check a post view and other sharing options.</p>
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/lc0">@lc0</a> on GitHub
@@ -189,6 +238,7 @@ Also to check a post view and other sharing options.</p>
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -203,7 +253,10 @@ Also to check a post view and other sharing options.</p>
       var disqus_shortname = 'lc0git';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://lc0.github.com/blog/2012/10/09/welcome-post/';
+        var disqus_url = 'http://lc0.github.com/blog/2012/10/09/welcome-post/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

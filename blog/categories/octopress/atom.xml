@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[thoughts in plain text]]></title>
-  <link href="http://lc0.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: octopress | thoughts in plain text]]></title>
+  <link href="http://lc0.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://lc0.github.com/"/>
   <updated>2012-10-09T03:08:59+03:00</updated>
   <id>http://lc0.github.com/</id>
@@ -24,10 +24,8 @@ Also to check a post view and other sharing options.</p>
 <!--more-->
 
 
-<p>And additional information inside the post, for instance a youtube video</p>
-
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/gn9-80ObGA8 "></iframe></div>
-
+<p>And additional information inside the post, for instance a youtube video
+<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/gn9-80ObGA8 "></iframe></div></p>
 ]]></content>
   </entry>
   
