@@ -259,7 +259,7 @@ p, li {
 
 .highlight, .gist-highlight {
   pre { background: none; @include border-radius(none); border: none; padding: 0; margin-bottom: 0; }
-  margin-bottom: 1.8em;
+  /*margin-bottom: 1.8em;*/
   background: $base03;
   overflow-y: hidden;
   overflow-x: auto;

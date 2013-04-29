@@ -116,7 +116,12 @@ function renderDeliciousLinks(items) {
   $('#delicious').html(output);
 }
 
+function killGistCss() {
+  $('article link').remove();
+}
+
 $.domReady(function() {
+  killGistCss();
   testFeatures();
   wrapFlashVideos();
   flashVideoFallback();
