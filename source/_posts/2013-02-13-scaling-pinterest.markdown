@@ -6,8 +6,8 @@ comments: true
 categories: ['scaling', 'architecture-review', 'startups']
 ---
 
-Interesting video from Surge 2012 conference by guys from Pinterest. Yash Nelapati and Marty Weiner tell story
-about changing of the startup's infrastructure from early days and when Pinterest became on of the biggest website.
+Interesting video from Surge 2012 conference by guys from Pinterest. Yash Nelapati and Marty Weiner tell the story
+of changes of the startup's infrastructure from early days and when Pinterest became on of the biggest website.
 Interesting to follow changes of technologies, especially withing such small group of engineers.
 
 {% youtube dSk-SWLJ2g0 %}
