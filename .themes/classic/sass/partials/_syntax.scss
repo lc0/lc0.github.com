@@ -32,6 +32,7 @@ html .gist .gist-file {
   border: none;
   padding-top: image-height("code_bg.png") !important;
   .gist-syntax {
+    padding: 0 !important;
     border-bottom: 0 !important;
     background: none !important;
     .gist-highlight{
@@ -61,7 +62,7 @@ html .gist .gist-file {
       &:hover { color: $base1 !important; }
     }
     a[href*='#file'] {
-      position: absolute; top: 0; left:0; right:-10px;
+      position: absolute; top: 0; left:0; right:0px;
       color: #474747 !important;
       @extend .code-title;
       &:hover { color: $link-color !important; }
