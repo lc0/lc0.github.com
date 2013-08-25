@@ -1,6 +1,10 @@
 .highlight, html .gist .gist-file .gist-syntax .gist-highlight {
   table td.code { width: 100%; }
+  .line-data {
+    width:100%;
+  }
   .line-numbers {
+    width:1em;
     text-align: right;
     font-size: 13px;
     line-height: 1.45em;
