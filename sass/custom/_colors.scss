@@ -36,13 +36,13 @@
 //$solar-cyan:      #2aa198;
 //$solar-green:     #859900;
 
-$base03:          #272822; 
-$base02:          #272822; 
+$base03:          #272822;
+$base02:          #272822;
 $base01:          #586e75;
-$base0:           #839496; 
-$base1:           #93a1a1; 
-$base2:           #eee8d5; 
-$base3:           #fdf6e3; 
+$base0:           #839496;
+$base1:           #93a1a1;
+$base2:           #eee8d5;
+$base3:           #fdf6e3;
 $solar-yellow:    #f92672;
 $solar-orange:    #cb4b16;
 $solar-red:       #fff;
@@ -55,7 +55,7 @@ $solar-green:     #859900;
 $number:          #AE81FF;
 $err:             #960050;
 $err_bg:          #1e0010;
-$comment:         #75715e; 
+$comment:         #75715e;
 $constant:        #AE81FF;
 $keyword:         #FF2571;
 $operator:        #FF2571;
@@ -86,7 +86,7 @@ html {
   background: #fff !important;
 }
 body {
-  > div {
+  > div#main {
     background: #fff !important;
     > div {
       background: #fff !important;
