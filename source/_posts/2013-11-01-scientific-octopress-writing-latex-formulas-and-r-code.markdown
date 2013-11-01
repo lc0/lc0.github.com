@@ -12,7 +12,7 @@ Basically, for programming posts it's enough, you could even easily use Github g
 and lots of other interesting features. But honestly it's only for programming part of me.
 
 From another side, I do like to read some nice researches and every nice research has solid math behind, that make that
-paper even more elegant. So my task for today is to be able to share some ideas with possible math profs of them, or even some $$\TeX$$ based
+paper even more elegant. So my task for today is to be able to share some ideas with possible math proofs of them, or even some $$\TeX$$ based
 papers.
 
 $$
@@ -25,50 +25,25 @@ $$
 LaTeX
 --------------
 To render markdown, octopress uses the [rdiscount](https://github.com/davidfstr/rdiscount) library, but it doesn't support LaTeX.
-I'd use [kramdown](http://kramdown.rubyforge.org/) library to parse LaTeX code. For this we need to add
+I'd use [kramdown](http://kramdown.rubyforge.org/) library to parse TeX code. For this we need to add
 
 {% codeblock %}
 gem 'kramdown'
 {% endcodeblock %}
 
-into our Gemfile. Also in __config.yml_ we need replace markdown interpretator
+into our _Gemfile_. Also in __config.yml_ markdown interpretator must ben replace with
 
 {% codeblock %}
 markdown: kramdown
 {% endcodeblock %}
 
-And the last step we need to add JavaScript library to render our math formulas. [MathJax](http://www.mathjax.org/) is good library to render such LaTeX and MathML.
-We need to add next code into __
+And the last step, we need to add JavaScript library to render our math formulas. [MathJax](http://www.mathjax.org/) is a good library to render such LaTeX and MathML. We need to add next code into _source\_layouts\default.html_
 
-{% codeblock %}
-<!-- mathjax config similar to math.stackexchange -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  jax: ["input/TeX", "output/HTML-CSS"],
-  tex2jax: {
-    inlineMath: [ ['$', '$'] ],
-    displayMath: [ ['$$', '$$']],
-    processEscapes: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-  },
-  messageStyle: "none",
-  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
-});
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
-{% endcodeblock %}
+{% gist d9ac107689a57507ca73 mathjax.js %}
 
 Now we could write things like this
 
-{% codeblock %}
-$$
-\begin{align}
-\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
-\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
-\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
-\end{align}
-$$
-{% endcodeblock %}
+{% gist d9ac107689a57507ca73 simple.tex %}
 
 That would be transformed into nice
 
