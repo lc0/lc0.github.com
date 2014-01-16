@@ -16,11 +16,12 @@ and also good replication and even chunking from another. Good overview of confi
 <!--more-->
 
 And the video of the talk by Rick Branson, Infrastructure Engineer at Instagram
+
 {% youtube E708csv4XgY %}
 
 
-
 ###Outline
+
 ####I. Concepts
  * A Brief History of Messaging and Queues
  * The 3 Messaging Topologies

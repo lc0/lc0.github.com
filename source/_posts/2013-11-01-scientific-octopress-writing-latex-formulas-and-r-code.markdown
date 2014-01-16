@@ -54,3 +54,8 @@ $$
 \mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
 \end{align}
 $$
+
+
+Figures and formulas from R code
+--------------
+With automatic generation of figures and blog posts based on R code, I’d like to postpone. Because with my current Windows machine it doesn’t sounds like fun. I’m going to post another update with configuration of such environment, based on R, knitr and a couple more scripts. Stay tuned!
