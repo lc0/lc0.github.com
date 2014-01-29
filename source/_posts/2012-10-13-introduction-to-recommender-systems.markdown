@@ -6,6 +6,6 @@ comments: true
 categories: ['recommender systems', 'science', 'tutorials']
 ---
 
-RecSysTEL lecture at advanced SIKS course, NL by [Hendrik Drachsler]('http://www.slideshare.net/Drachsler')
+RecSysTEL lecture at advanced SIKS course, NL by [Hendrik Drachsler](http://www.slideshare.net/Drachsler)
 
 {% slideshare 12524314 %}

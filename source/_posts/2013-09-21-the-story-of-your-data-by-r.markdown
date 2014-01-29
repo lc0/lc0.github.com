@@ -57,7 +57,7 @@ We're going to get pictures like this
 {% img center http://i.imgur.com/lj0K76B.png %}
 
 The main goal was to create a nice video with all generated data. To convert PNG images to one MPG file,
-I used [ImageMagic](www.imagemagick.org/)
+I used [ImageMagic](http://www.imagemagick.org/)
 
 {% codeblock %}
 convert -quality 100 -delay 100 *.png stylight-signups.mpg
