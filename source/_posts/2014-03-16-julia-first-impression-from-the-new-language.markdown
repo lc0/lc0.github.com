@@ -1,24 +1,24 @@
 ---
 layout: post
-title: "Julia: first impression from the new language"
+title: "Julia: first impressions from the new language"
 date: 2014-03-16 18:33
 comments: true
 categories: [R, Julia, languages]
 ---
 
-One big difference what we have today and what we had 20 years in IT is a number of actively developing and supporting technologies and even programming languages. Yes, some of them will be depricated just a couple years after the birth, but still you could actually feel the freedom of new technologies. Of course, the fact that we have some laguages won't make a big difference for real production tasks or enterprice field, but still you have some variants to compare, and I do belive, that if something is much better, than other existing variants in the end of the day it will win the fight with something much less efficient.
+One big difference what we have today and what we had 20 years in IT is a number of actively developing and supporting technologies and even programming languages. Yes, some of them will be depricated just a couple years after the birth, but still you could actually feel the freedom of new technologies. Of course, the fact that we have some laguages won't make a big difference for real production tasks or enterprice field, but still you have some variants to compare, and I do belive, that if something is much better, than other existing competitors in the end of the day it will win the fight with something much less efficient.
 
-In my daily routine I often use R for some tasks, mainly because it quite powerful in variety of statistical libraries, and lots of others, but also because you could quite easily and fast iterate and get some simple visualization of your results. Especially with all these powerfull libraries like ggplot2 and so on.
+In my daily routine I often use R for some tasks, mainly because it quite powerful in variety of statistical libraries, and not only, also because you could quite easily and fast iterate and get simple visualization of your results. Especially with all these powerfull libraries like ggplot2 and so on.
 
 {% img center http://julia.readthedocs.org/en/latest/_static/julia-logo.svg 'Julia performance comparison' %}
 
-From another point, there is another promising programming language [Julia](http://julialang.org/) or [Julialang](http://julialang.org/). So Julia is a new language, first appeared in 2012 at MIT. It's a high-level dynamic programming language designed to address the requirements of high-performance and scientific computations. Julia is written in C, C++ and Schema using the LLVM compilr framework.
+From another point, there is another promising programming language [Julia](http://julialang.org/) or [Julialang](http://julialang.org/). So Julia is a new prgramming language, first appeared in 2012 at MIT. It's a high-level dynamic programming language designed to address the requirements of high-performance and scientific computations. Julia is written in C, C++ and Schema using the LLVM compiler framework.
 
 {% img center /images/julia.png 'Julia performance comparison' %}
 
 <!--more-->
 
-Some features from official website
+Some features from the official website:
 
 * Multiple dispatch: providing ability to define function behavior across many combinations of argument types
 * Dynamic type system: types for documentation, optimization, and dispatch
@@ -36,7 +36,7 @@ Some features from official website
 * Efficient support for Unicode, including but not limited to UTF-8
 * MIT licensed: free and open source
 
-Enough, with general knowledge, some feedback I had during last couple days writing a simple analysis.
+Enough, with features description, some feedback I had during a couple days performing a simple analysis.
 
 The very first issue I’ve been faced with, was that Julia just didn’t work for me with another [JuliaStudio](https://github.com/forio/julia-studio) from Forio. I used for my tests a cmahine with Windows7
 
@@ -54,15 +54,18 @@ while loading C:\Julia 0.3.0-prerelease\etc\julia\juliarc.jl, in expression star
 ting on line 12
 ```
 
-After was able to found that I have problems with creating a new folder for network share where my Windows domain controller save my AppData folder. For the fast fix we need *AppData* to *USERPROFILE* in \etc\julia\juliarc.jl
+After was able to find that I have problems with creating a new folder for network share where my Windows domain controller save my AppData folder. For the fast fix we need *AppData* to *USERPROFILE* in \etc\julia\juliarc.jl
 
 for now I just use Sublime text in combination with
 
 Gadfly.jl looked quite good for plotting tasks also you would need Cairo like a plotting driver https://github.com/dcjones/Gadfly.jl
 
+```
 ERROR: Cairo must be installed to use the PNG backend.
  in PNG at C:\Users\khomenkos.AWESOME\.julia\v0.3\Compose\src\Compose.jl:73
+```
 
+Everyone likes vissualizations, but sometimes it's quite difficult to make visualizations more interructive
 D3
 
 joinpath(Pkg.dir("Gadfly"), "src", "gadfly.js")
