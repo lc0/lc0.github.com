@@ -7,7 +7,7 @@ module Jekyll
         end
 
         def render(context)
-            %(<script async="true" class="speakerdeck-embed" data-id="#{@id.strip}" src="//speakerdeck.com/assets/embed.js"> </script>)
+            %(<script async="true" class="speakerdeck-embed"  data-ratio="1.7" data-id="#{@id.strip}" src="//speakerdeck.com/assets/embed.js"> </script>)
         end
 
     end
