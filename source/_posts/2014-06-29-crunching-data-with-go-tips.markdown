@@ -4,6 +4,7 @@ title: "Crunching data with go: Tips, tricks and use-cases"
 date: 2014-06-29 18:09
 comments: true
 categories: [Golang, BigQuery, Sqlx, GeoIp, GoogleAnalytics]
+published: false
 ---
 
 Go or Golang is an open source programming language initially developed by Google.

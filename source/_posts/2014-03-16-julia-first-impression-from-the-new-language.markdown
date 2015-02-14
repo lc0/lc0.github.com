@@ -4,6 +4,7 @@ title: "Julia: first impressions from the new language"
 date: 2014-03-16 18:33
 comments: true
 categories: [R, Julia, languages]
+published: false
 ---
 
 One big difference what we have today and what we had 20 years in IT is a number of actively developing and supporting technologies and even programming languages. Yes, some of them will be depricated just a couple years after the birth, but still you could actually feel the freedom of new technologies. Of course, the fact that we have some laguages won't make a big difference for real production tasks or enterprice field, but still you have some variants to compare, and I do belive, that if something is much better, than other existing competitors in the end of the day it will win the fight with something much less efficient.
