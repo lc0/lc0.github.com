@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: python | thoughts in plain text]]></title>
+  <link href="http://lc0.github.io/blog/categories/python/atom.xml" rel="self"/>
+  <link href="http://lc0.github.io/"/>
+  <updated>2015-02-15T00:57:13+01:00</updated>
+  <id>http://lc0.github.io/</id>
+  <author>
+    <name><![CDATA[Sergii Khomenko]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Celery messaging at scale at Instagram]]></title>
+    <link href="http://lc0.github.io/blog/2013/05/01/celery-messaging-at-scale-at-instagram/"/>
+    <updated>2013-05-01T15:27:00+02:00</updated>
+    <id>http://lc0.github.io/blog/2013/05/01/celery-messaging-at-scale-at-instagram</id>
+    <content type="html"><![CDATA[<p>Interesting talk by an infrastructure engineer from Instagram.
+Described idea of feed generation at scale from different points of view, starting with simple and very expensive O(∞),
+after with Gearman &amp; Python solutions and finally based on Celery and RabbitMQ. Considered different brokers to have reasonably fast time of response from one point
+and also good replication and even chunking from another. Good overview of configuring Celery for big scale with different routings, queues and concurrency levels.</p>
+
+<p><script async="true" class="speakerdeck-embed"  data-ratio="1.7" data-id="057d90a07156013098d412313918245d" src="//speakerdeck.com/assets/embed.js"> </script></p>
+
+<!--more-->
+
+<p>And the video of the talk by Rick Branson, Infrastructure Engineer at Instagram</p>
+
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/E708csv4XgY"></iframe></div></p>
+
+<h3 id="outline">Outline</h3>
+
+<h4 id="i-concepts">I. Concepts</h4>
+<ul>
+  <li>A Brief History of Messaging and Queues</li>
+  <li>The 3 Messaging Topologies</li>
+  <li>Messaging Pattern: Request-Reply (RPC)</li>
+  <li>Messaging Pattern: Publish/Subscribe</li>
+  <li>Messaging Pattern: Push-Pull (Workers)</li>
+  <li>Why use a message broker anyway?</li>
+</ul>
+
+<h4 id="ii-workers-at-instagram">II. Workers at Instagram</h4>
+<ul>
+  <li>Use Case #1: Feed Delivery</li>
+  <li>Other Use Cases</li>
+  <li>Then: Gearman</li>
+  <li>Gearman in Python: Coding &amp; Testing</li>
+  <li>Gearman in Production: Monitoring &amp; what goes wrong?</li>
+  <li>Now: RabbitMQ &amp; Celery</li>
+  <li>Celery in Python: Coding &amp; Testing</li>
+  <li>RabbitMQ in Production: Monitoring, Availability, Scaling, Fault Tolerance, and What Goes Wrong</li>
+  <li>Our Hacks on Celery</li>
+  <li>Message Flow, Priority, and QoS</li>
+  <li>Fault Tolerance: Retries and Crash Safety</li>
+  <li>Concurrency &amp; The Dark Magic of Evented Workers</li>
+</ul>
+
+<h4 id="iii-alternatives">III. Alternatives</h4>
+<ul>
+  <li>Not Everything is Crucial</li>
+  <li>Engineering Trade-Offs: Cost &amp; Performance vs Correctness</li>
+  <li>The Hail-Mary: UDP &amp; Python, Use Cases</li>
+  <li>The Event Bus</li>
+  <li>Real-Time Web Delivery</li>
+  <li>Why not use …?</li>
+</ul>
+]]></content>
+  </entry>
+  
+</feed>

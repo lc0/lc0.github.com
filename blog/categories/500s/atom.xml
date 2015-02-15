@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 500s | thoughts in plain text]]></title>
+  <link href="http://lc0.github.io/blog/categories/500s/atom.xml" rel="self"/>
+  <link href="http://lc0.github.io/"/>
+  <updated>2015-02-15T00:57:13+01:00</updated>
+  <id>http://lc0.github.io/</id>
+  <author>
+    <name><![CDATA[Sergii Khomenko]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[metrics for pirates by Dave McClure]]></title>
+    <link href="http://lc0.github.io/blog/2012/10/10/metrics-for-pirates-by-dave-mcclure/"/>
+    <updated>2012-10-10T21:34:00+02:00</updated>
+    <id>http://lc0.github.io/blog/2012/10/10/metrics-for-pirates-by-dave-mcclure</id>
+    <content type="html"><![CDATA[<p>Some good presentations from 500s-guys.</p>
+
+<p><center><iframe src="http://www.slideshare.net/slideshow/embed_code/14664170?rel=0" frameborder="0" width="597" height="486" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe></center>
+<!--more-->
+<center><iframe src="http://www.slideshare.net/slideshow/embed_code/14670864?rel=0" frameborder="0" width="597" height="486" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe></center>
+plugin after</p>
+]]></content>
+  </entry>
+  
+</feed>

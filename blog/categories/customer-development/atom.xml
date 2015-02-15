@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: customer development | thoughts in plain text]]></title>
+  <link href="http://lc0.github.io/blog/categories/customer-development/atom.xml" rel="self"/>
+  <link href="http://lc0.github.io/"/>
+  <updated>2015-02-15T00:57:13+01:00</updated>
+  <id>http://lc0.github.io/</id>
+  <author>
+    <name><![CDATA[Sergii Khomenko]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Actionable customer development]]></title>
+    <link href="http://lc0.github.io/blog/2013/04/09/actionable-customer-development/"/>
+    <updated>2013-04-09T00:32:00+02:00</updated>
+    <id>http://lc0.github.io/blog/2013/04/09/actionable-customer-development</id>
+    <content type="html"><![CDATA[<p>Recently found a good presentation about actionable customer development for startups. Yes, it sounds like some buzzwords, 
+but in presentations you could find the first stage of every idea - validation. The most interesting part of the workshop
+is recommendations about performing correct user interviews to validate the idea.</p>
+
+<p>Usually it’s a very first big mistake of funders, because we so much believe in our idea. We love it so much, that are ready to ask 
+the wrong questions just to find some confirmation of our ideas. But much better to ask correct questions and to find the real user
+problems or even pains, than just to work on the problem nobody has. </p>
+
+<p>Fail fast! Fail cheap!</p>
+
+<p><center><iframe src="http://www.slideshare.net/slideshow/embed_code/18229425?rel=0" frameborder="0" width="597" height="486" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe></center></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: architecture-review | thoughts in plain text]]></title>
+  <link href="http://lc0.github.io/blog/categories/architecture-review/atom.xml" rel="self"/>
+  <link href="http://lc0.github.io/"/>
+  <updated>2015-02-15T00:57:13+01:00</updated>
+  <id>http://lc0.github.io/</id>
+  <author>
+    <name><![CDATA[Sergii Khomenko]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Building and scaling a company. Linkedin story.]]></title>
+    <link href="http://lc0.github.io/blog/2013/07/26/building-and-scaling-a-company-linkedin-story/"/>
+    <updated>2013-07-26T00:28:00+02:00</updated>
+    <id>http://lc0.github.io/blog/2013/07/26/building-and-scaling-a-company-linkedin-story</id>
+    <content type="html"><![CDATA[<p>I was always interested in technology stack of large-scale startups. It’s quite interesting to follow the
+evolutions of the company during not so long periods. From one point, it’s interesting to follow changes of technologies,
+but much more interesting are reasons which have led to such decisions. So today I’m going to share the story of Linkedin told by
+<a href="https://twitter.com/jaykreps">Jay Kreps</a>, Principle Staff Engineer at LinkedIn during the InfoQ conference.</p>
+
+<p><center><iframe src="http://www.slideshare.net/slideshow/embed_code/24263581?rel=0" frameborder="0" width="597" height="486" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe></center>
+<!--more-->
+Jay describes the evolution of the startup’s architecture from the simplest iteration
+<img src="http://image.slidesharecdn.com/untitled-130715145706-phpapp01/95/slide-10-638.jpg" alt="simplest" /><br />
+to more distributed with more elements like voldemort and hadoop
+<img src="http://image.slidesharecdn.com/untitled-130715145706-phpapp01/95/slide-11-638.jpg" alt="second iteration with voldemort and hadoop" /><br />
+and even more with Apache Kafka, messaging system, and Espresso, key-value database.
+<img src="http://image.slidesharecdn.com/untitled-130715145706-phpapp01/95/slide-12-638.jpg" alt="voldemort, hadoop, kafka, espreso" /><br /></p>
+
+<p>The main idea Jay tells us, is to try to use simple, cheap and scalable primitives to be able to re-use
+one infrastructure for different purposes. Another idea is to have all expensive operation asynchronously,
+because all, that could fail, is going to fail and all front-end would follow the failing backend.
+Hard things should be executed offline, because they are safe and cheap, while offline.<br /></p>
+
+<p>Another big line of the presentation is transition from monolithic application architecture to service oriented architecture.
+The big idea reminds me of the principle of <a href="http://12factor.net/">The Twelve-Factor App</a>
+<img src="http://image.slidesharecdn.com/untitled-130715145706-phpapp01/95/slide-21-638.jpg" alt="software-as-a-service at Linkedin" /><br />
+The main advantage of such methodology is ability to easily iterate over versions, to be quite independent inside the service and
+to re-use some primitives of the infrastructure. By the way, deciding to move forward with
+software-as-a-service methodology, we need to understand the problem of the granularity of a service. Also about among-server communication,
+within Linkedin they changed a couple of integration layers started from  HTTP + serializable Java, after Protocol Buffer + TCP and finally REST + JSON.</p>
+
+<p>There is also a good explanation of the idea to have a code owner and treating the code as property.
+Discussed main points of interaction within team and other aspects of agile at scale.</p>
+
+<p>The full version of the video could be found by <a href="http://www.infoq.com/presentations/linkedin-architecture-stack">link</a><br />
+Another post about large-scale architecture of startups: <a href="/blog/2013/02/13/scaling-pinterest/">Scaling Pinterest</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Scaling Pinterest]]></title>
+    <link href="http://lc0.github.io/blog/2013/02/13/scaling-pinterest/"/>
+    <updated>2013-02-13T01:12:00+01:00</updated>
+    <id>http://lc0.github.io/blog/2013/02/13/scaling-pinterest</id>
+    <content type="html"><![CDATA[<p>Interesting video from Surge 2012 conference by guys from Pinterest. Yash Nelapati and Marty Weiner tell the story
+of changes of the startup’s infrastructure from early days and when Pinterest became one of the biggest website.
+Interesting to follow changes of technologies, especially withing such small group of engineers.</p>
+
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/dSk-SWLJ2g0"></iframe></div></p>
+]]></content>
+  </entry>
+  
+</feed>

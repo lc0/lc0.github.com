@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: product design | thoughts in plain text]]></title>
+  <link href="http://lc0.github.io/blog/categories/product-design/atom.xml" rel="self"/>
+  <link href="http://lc0.github.io/"/>
+  <updated>2015-02-15T00:57:13+01:00</updated>
+  <id>http://lc0.github.io/</id>
+  <author>
+    <name><![CDATA[Sergii Khomenko]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[product design: features and simplicity]]></title>
+    <link href="http://lc0.github.io/blog/2012/10/21/product-design-features-and-simplicity/"/>
+    <updated>2012-10-21T15:42:00+02:00</updated>
+    <id>http://lc0.github.io/blog/2012/10/21/product-design-features-and-simplicity</id>
+    <content type="html"><![CDATA[<p><center><iframe src="http://www.slideshare.net/slideshow/embed_code/14814757?rel=0" frameborder="0" width="597" height="486" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe></center></p>
+]]></content>
+  </entry>
+  
+</feed>
