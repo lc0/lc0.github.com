@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: ipython | thoughts in plain text]]></title>
-  <link href="http://lc0.github.io/blog/categories/ipython/atom.xml" rel="self"/>
+  <title><![CDATA[Category: CFP | thoughts in plain text]]></title>
+  <link href="http://lc0.github.io/blog/categories/cfp/atom.xml" rel="self"/>
   <link href="http://lc0.github.io/"/>
   <updated>2015-03-24T13:00:56+01:00</updated>
   <id>http://lc0.github.io/</id>
