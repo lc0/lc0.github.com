@@ -4,7 +4,7 @@
   <title><![CDATA[Category: pydata | thoughts in plain text]]></title>
   <link href="http://lc0.github.io/blog/categories/pydata/atom.xml" rel="self"/>
   <link href="http://lc0.github.io/"/>
-  <updated>2015-12-27T01:47:31+01:00</updated>
+  <updated>2015-12-27T01:50:29+01:00</updated>
   <id>http://lc0.github.io/</id>
   <author>
     <name><![CDATA[Sergii Khomenko]]></name>
@@ -2186,7 +2186,7 @@ loading data for nyc2013 conference
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
+      <th />
       <th>abstracts</th>
       <th>titles</th>
       <th>city</th>
@@ -2194,10 +2194,10 @@ loading data for nyc2013 conference
     </tr>
     <tr>
       <th>conference</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th />
+      <th />
+      <th />
+      <th />
     </tr>
   </thead>
   <tbody>
@@ -2439,7 +2439,7 @@ m4MAAAAASUVORK5CYII=
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
+      <th />
       <th>0</th>
     </tr>
   </thead>
