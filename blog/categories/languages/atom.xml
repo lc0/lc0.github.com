@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: languages | thoughts in plain text]]></title>
+  <link href="http://lc0.github.io/blog/categories/languages/atom.xml" rel="self"/>
+  <link href="http://lc0.github.io/"/>
+  <updated>2015-12-27T01:47:31+01:00</updated>
+  <id>http://lc0.github.io/</id>
+  <author>
+    <name><![CDATA[Sergii Khomenko]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Julia: first impressions from the new language]]></title>
+    <link href="http://lc0.github.io/blog/2014/03/16/julia-first-impression-from-the-new-language/"/>
+    <updated>2014-03-16T18:33:00+01:00</updated>
+    <id>http://lc0.github.io/blog/2014/03/16/julia-first-impression-from-the-new-language</id>
+    <content type="html"><![CDATA[<p>One big difference what we have today and what we had 20 years in IT is a number of actively developing and supporting technologies and even programming languages. Yes, some of them will be depricated just a couple years after the birth, but still you could actually feel the freedom of new technologies. Of course, the fact that we have some laguages won’t make a big difference for real production tasks or enterprice field, but still you have some variants to compare, and I do belive, that if something is much better, than other existing competitors in the end of the day it will win the fight with something much less efficient.</p>
+
+<p>In my daily routine I often use R for some tasks, mainly because it quite powerful in variety of statistical libraries, and not only, also because you could quite easily and fast iterate and get simple visualization of your results. Especially with all these powerfull libraries like ggplot2 and so on.</p>
+
+<p><img class="center" src="http://julia.readthedocs.org/en/latest/_static/julia-logo.svg" title="‘Julia performance comparison’" ></p>
+
+<p>From another point, there is another promising programming language <a href="http://julialang.org/">Julia</a> or <a href="http://julialang.org/">Julialang</a>. So Julia is a new prgramming language, first appeared in 2012 at MIT. It’s a high-level dynamic programming language designed to address the requirements of high-performance and scientific computations. Julia is written in C, C++ and Schema using the LLVM compiler framework.</p>
+
+<p><img class="center" src="/images/julia.png" title="‘Julia performance comparison’" ></p>
+
+<!--more-->
+
+<p>Some features from the official website:</p>
+
+<ul>
+  <li>Multiple dispatch: providing ability to define function behavior across many combinations of argument types</li>
+  <li>Dynamic type system: types for documentation, optimization, and dispatch</li>
+  <li>Good performance, approaching that of statically-compiled languages like C</li>
+  <li>Built-in package manager</li>
+  <li>Lisp-like macros and other metaprogramming facilities</li>
+  <li>Call Python functions: use the PyCall package</li>
+  <li>Call C functions directly: no wrappers or special APIs</li>
+  <li>Powerful shell-like capabilities for managing other processes</li>
+  <li>Designed for parallelism and distributed computation</li>
+  <li>Coroutines: lightweight “green” threading</li>
+  <li>User-defined types are as fast and compact as built-ins</li>
+  <li>Automatic generation of efficient, specialized code for different argument * types</li>
+  <li>Elegant and extensible conversions and promotions for numeric and other * types</li>
+  <li>Efficient support for Unicode, including but not limited to UTF-8</li>
+  <li>MIT licensed: free and open source</li>
+</ul>
+
+<p>Enough, with features description, some feedback I had during a couple days performing a simple analysis.</p>
+
+<p>The very first issue I’ve been faced with, was that Julia just didn’t work for me with another <a href="https://github.com/forio/julia-studio">JuliaStudio</a> from Forio. I used for my tests a cmahine with Windows7</p>
+
+<p><code>
+fatal: error thrown and no exception handler available.
+Base.SystemError(prefix="mkdir", errnum::Int32)
+</code></p>
+
+<p>After with downloading the last pre-relese julia v.0.3.0 I’ve found where exactly happening that system error. Fortunately for me, in the last version of Julia, you could see much more details what is actually wrong with that error.</p>
+
+<p><code>
+ERROR: mkdir: No such file or directory
+ in systemerror at error.jl:39
+while loading C:\Julia 0.3.0-prerelease\etc\julia\juliarc.jl, in expression star
+ting on line 12
+</code></p>
+
+<p>After was able to find that I have problems with creating a new folder for network share where my Windows domain controller save my AppData folder. For the fast fix we need <em>AppData</em> to <em>USERPROFILE</em> in \etc\julia\juliarc.jl</p>
+
+<p>for now I just use Sublime text in combination with</p>
+
+<p>Gadfly.jl looked quite good for plotting tasks also you would need Cairo like a plotting driver https://github.com/dcjones/Gadfly.jl</p>
+
+<p><code>
+ERROR: Cairo must be installed to use the PNG backend.
+ in PNG at C:\Users\khomenkos.AWESOME\.julia\v0.3\Compose\src\Compose.jl:73
+</code></p>
+
+<p>Everyone likes vissualizations, but sometimes it’s quite difficult to make visualizations more interructive
+D3</p>
+
+<p>joinpath(Pkg.dir(“Gadfly”), “src”, “gadfly.js”)</p>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script src="gadfly.js"></script>
+
+<!-- Placed whereever you want the graphic to be rendered. -->
+<div id="my_chart"></div>
+<script src="mammals.js"></script>
+
+<script>
+draw("#my_chart");
+</script>
+
+<p>http://d3js.org/</p>
+
+<p>p = plot(dataset(“car”, “SLID”), x=”Wages”, color=”Language”, Geom.histogram)
+draw(D3(“mammals.js”, 6inch, 6inch), p)</p>
+
+<p>file:///C:/Julia%200.3.0-prerelease/test.html</p>
+
+<p>In the middle of the process it just worked for me, but i didn’t change anything related</p>
+
+<p>For a long time i had problems with Pkg.add(“IJulia”). Mainly because my ipython was not in PATH environment and because of it IJulia were not about to find the path of Ipython and setup the profile for Julia.</p>
+
+<p>Still missing lots of simple function like table, when you want to see distribution of for every type of factors.
+There is a web page to show some of synonyms
+ http://www.johnmyleswhite.com/notebook/2012/04/09/comparing-julia-and-rs-vocabularies/</p>
+
+<p>Another issues, documentation, I was missing some very simple functions like table from R and almost gave up, only after twitter I found that there is another package, that could actually help me with that.
+counts = countmap(gdf[“x2”])
+Another problem is dataframes, they are not the part of core, but you could install and use the DataFrames package https://github.com/JuliaStats/DataFrames.jl
+The problem I’ve faced was creating new column, in R I never even thought about it, I just created it and used, here it’s not so easy</p>
+
+<p>Connecting to different data sources with Julia http://randyzwitch.com/julia-import-data/
+log parsing https://rtcamp.com/tutorials/nginx/log-parsing/</p>
+
+<p>http://mashable.com/2013/07/05/google-tools/?utm_cid=mash-com-fb-main-link</p>
+
+<p>http://wesmckinney.com/blog/?p=475</p>
+
+<p>http://www.stat.wisc.edu/~bates/JuliaForRProgrammers.pdf</p>
+
+<p>http://nbviewer.ipython.org/github/john9631/JuliaDocs/blob/master/GadflyTutorial/GadflyTutorial.ipynb</p>
+]]></content>
+  </entry>
+  
+</feed>
